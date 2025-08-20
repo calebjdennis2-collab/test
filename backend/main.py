@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+app = FastAPI(title="Docu Cloud API")
 
 @app.get("/")
 async def read_root():
-    return {"Hello": "World"}
+    return {"msg": "Welcome to Docu Cloud API!"}
